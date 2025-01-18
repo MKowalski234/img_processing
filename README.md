@@ -23,43 +23,68 @@ Aplikacja umożliwia wczytywanie obrazów i ich przetwarzanie z wykorzystaniem i
 -Przetwarzanie wielowątkowe: Optymalizacja wydajności poprzez równoległe przetwarzanie obrazów.
 
 **Struktura katalogów**
+
 project-folder/
+
 ├── main.py                 # Główna aplikacja GUI
+
 ├── image_processing.py     # Funkcje przetwarzania obrazu
+
 ├── multiprocessing_utils.py # Funkcje wielowątkowości
+
 ├── testing.py              # Testowanie przetwarzania obrazu
+
 ├── sandbox.py              # Eksperymenty i testy
+
 ├── img/                    # Katalog roboczy na segmenty obrazów
+
 ├── requirements.txt        # Lista zależności
+
 └── README.md               # Dokumentacja projektu
 
 **main.py** Główny plik aplikacji, który uruchamia GUI.
+
 **image_processing.py** Plik z funkcjami do przetwarzania obrazu, które mogą być używane również w innych miejscach.
+
 **multiprocessing_utils.py** Plik z funkcjami obsługującymi przetwarzanie wielowątkowe.
+
 **testing.py** Plik do testowania funkcji wielowątkowych.
+
 **sandbox.py** Ten plik można użyć do testowania kodu na żywo i eksperymentów, np. z funkcją imgcrop lub szybkimi modyfikacjami.
 
 **Instalacja**
 
 Skopiuj repozytorium:
+
   git clone <link-do-repozytorium>
+  
   cd project-folder
 
 Zainstaluj wymagane zależności:
+
 Upewnij się, że masz zainstalowanego Pythona (>= 3.7). Następnie wykonaj:
+
   pip install -r requirements.txt
 
 Uruchom aplikację:
+
   python main.py
 
 **Wymagania**
+
 -Python 3.7 lub wyższy
+
 -Biblioteki wymienione w requirements.txt
 
 **Technologie użyte w projekcie**
+
 -Tkinter: Tworzenie interfejsu graficznego.
+
 -OpenCV: Przetwarzanie obrazów.
+
 -Pillow: Obsługa obrazów w GUI.
+
 -NumPy: Operacje na danych numerycznych.
+
 -Multiprocessing: Optymalizacja wydajności.
 
