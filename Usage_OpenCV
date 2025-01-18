@@ -1,0 +1,28 @@
+1. Wykorzystanie OpenCV
+OpenCV (moduł cv2) jest używane w projekcie głównie do przetwarzania obrazów. Oto przykłady zastosowań:
+
+Funkcje przetwarzania obrazu (plik image_processing.py):
+
+Detekcja krawędzi (canny):
+def canny(image):
+    return cv.Canny(image, 125, 175)
+#Wykorzystuje OpenCV do przeprowadzenia detekcji krawędzi metodą Canny'ego.
+
+
+Konwersja do skali szarości (gray):
+def gray(image):
+    return cv.cvtColor(image, cv.COLOR_BGR2GRAY)
+#Wykorzystuje funkcję cv.cvtColor do przekształcenia obrazu na odcienie szarości.
+
+Odczyt i zapis obrazu:
+image = cv.imread(file_path)
+cv.imwrite(output_path, processed_image)
+#OpenCV jest używane do wczytywania obrazów z plików oraz zapisywania przetworzonych wyników.
+
+Odwracanie kolorów (invert):
+def invert(image):
+    return 255 - image
+#Operacja jest wykonywana na macierzy obrazu, co jest zgodne z formatem obrazu OpenCV (NumPy array).
+
+GUI (plik main.py):
+OpenCV jest używane w tle do przetwarzania obrazów załadowanych przez użytkownika (np. wczytanie obrazu, konwersja do NumPy array, zapis przetworzonych wyników).
